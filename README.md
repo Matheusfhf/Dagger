@@ -14,13 +14,13 @@ Existem duas classes: Carro e Veículo. Supondo que um veículo possa instanciar
 
 class Veiculo{
 
-Carro carro;
+    Carro carro;
 
-Veiculo(){
+    Veiculo(){
 
-carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
+        carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
 
-}
+    }
 
 }
 
@@ -28,12 +28,13 @@ A injeção de dependência com o mesmo exemplo seria algo do tipo:
 
 class Veiculo{
 
-Carro carro;
+    Carro carro;
 
-Veiculo(Carro carro){
+    Veiculo(Carro carro){
 
-this.carro = carro; #A injeção de dependência é uma modificação positiva, pois faz com que o objeto de dependência, nesse caso o carro, possa ser facilmente alterado. Além disso, diminui a responsabilidade da classe Veiculo sendo assim, criando classes mais enxutas.
+        this.carro = carro; #A injeção de dependência é uma modificação positiva, pois faz com que o objeto de dependência, nesse caso o carro, possa ser facilmente alterado. Além disso, diminui a responsabilidade da classe Veiculo sendo assim, criando classes mais enxutas.
 
+    }
 }
 
 ## Por que usar o Dagger?
@@ -53,7 +54,8 @@ Para se utilizar o Dagger, devemos instalá-lo no nosso projeto. Para isso, vamo
 1. Crie um projeto no Android Studio
 2.  Acesse o build.gradle (App)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1eddf134-b5da-481a-ae2d-cf26419481ae/Untitled.png)
+    ![image](https://user-images.githubusercontent.com/91568652/197932277-f7d461a7-3e83-43b4-8b60-0095782ea09b.png)
+
     
 3. Cole o código a seguir no campo dependencies {}.
 
