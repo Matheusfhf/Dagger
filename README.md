@@ -118,6 +118,7 @@ Instanciamos todos os elementos “veículos” e geramos suas dependências cri
 Como desejamos que o dagger crie nossas dependências para nós, criamos uma Interface chamada VeiculoEspecifico para que essa mande nossos objetos instanciados. Essa é a parte mais importante do projeto que irá criar, armazenar e enviar os dados necessários.
 
 ![image](https://user-images.githubusercontent.com/91568652/197943866-18ef4325-4513-4f25-99c9-724f6c2c0d57.png)
+
 O dagger irá configurar a função. Devemos utilizar o @ Component para que seja gerado.
 
 Após essa configuração inicial do Dagger, devemos voltar na Classe Veículo e definir onde será o inject. Da seguinte forma: 
@@ -141,7 +142,7 @@ Executando o programa obtemos como saída do log:
 
 o que prova que a classe foi devidamente instanciada.
 
-###Adendo
+### Adendo
 
 Podemos observar também, algumas estruturas do Dagger como a DaggerVeiculoEspecifico, que é uma classe gerada pelo Daggere mostra a construção dos componentes. Demonstrando assim um dos maiores benefícios do Dagger, a criação desse extenso código que seria feito pelo programador, mas que é gerado assim que se compila o código.
 
