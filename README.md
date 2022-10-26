@@ -127,6 +127,7 @@ Após essa configuração inicial do Dagger, devemos voltar na Classe Veículo e
 isso, para que o Dagger saiba onde ele deve fazer a injeção.
 
 Da mesma forma, devemos configurar o Dagger para Carro, Moto e avião:
+
 ![image](https://user-images.githubusercontent.com/91568652/197943990-2f00e2bf-3e0a-48cc-a8f0-eb9458737965.png)
 
 Finalmente, como última alteração, vamos na MainActivity e criamos uma instância de um Veículo Especifico: 
