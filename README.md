@@ -12,28 +12,20 @@ Ex.:
 
 Existem duas classes: Carro e Veículo. Supondo que um veículo possa instanciar um objeto do tipo carro, a classe veículo depende de Carro e a classe Carro vira uma dependência de veículo.
 
+
 class Veiculo{
-
     Carro carro;
-
     Veiculo(){
-
-        carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
-
-    }
-
+    carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
+   }
 }
 
 A injeção de dependência com o mesmo exemplo seria algo do tipo:
 
 class Veiculo{
-
     Carro carro;
-
     Veiculo(Carro carro){
-
-        this.carro = carro; #A injeção de dependência é uma modificação positiva, pois faz com que o objeto de dependência, nesse caso o carro, possa ser facilmente alterado. Além disso, diminui a responsabilidade da classe Veiculo sendo assim, criando classes mais enxutas.
-
+        this.carro = carro; #A injeção de dependência é uma modificação positiva, pois faz com que o objeto de dependência, nesse caso o carro, possa ser facilmente           alterado. Além disso, diminui a responsabilidade da classe Veiculo sendo assim, criando classes mais enxutas.
     }
 }
 
