@@ -31,7 +31,7 @@ class Veiculo{
 ```
 ## Por que usar o Dagger?
 
-No exemplo acima, vimos como funcionaria a injeção de dependência para um exemplo simples, quando possuímos apenas Carro e Veículo, mas o que ocorreria, se por exemplo, possuíssemos Motocicleta, Ônibus, Avião, Trem, Barco, Bicicleta…, ou seja, um número muito grande de dependências? Bom, sem a utilização de um framework como o Dagger, nós iríamos possuir um código extenso e complicado que se fosse utilizado em mais de um lugar no projeto ficaria repetido, ou seja, se precisássemos fazer uma alteração precisaríamos de alterar mannualmente em cada parte do programa em que o trecho aparece.  Para evitar o trabalho repetitivo, utilizamos esse framework que simplifica de forma expressiva a tarefa. 
+No exemplo acima, vimos como funcionaria a injeção de dependência para um exemplo simples, quando possuímos apenas Carro e Veículo, mas o que ocorreria se, por exemplo, possuíssemos Motocicleta, Ônibus, Avião, Trem, Barco, Bicicleta…, ou seja, um número muito grande de dependências? Bom, sem a utilização de um framework como o Dagger, nós iríamos possuir um código extenso e complicado que se fosse utilizado em mais de um lugar no projeto ficaria repetido, ou seja, se precisássemos fazer uma alteração precisaríamos de alterar manualmente em cada parte do programa em que o trecho aparece.  Para evitar o trabalho repetitivo, utilizamos esse framework que simplifica de forma expressiva a tarefa. 
 
 ## Como utilizar o Dagger
 
@@ -110,7 +110,7 @@ Instanciamos todos os elementos “veículos” e geramos suas dependências cri
 
 é na Classe MainActivity que iremos utilizar a classe Veiculo, chamamos a classe veiculo e sua função posteriormente.
 
-![image](https://user-images.githubusercontent.com/91568652/197943799-3df74b5e-5c4b-4d09-836b-ba1d0b440167.png)
+![image](https://user-images.githubusercontent.com/91568652/198149252-d6d49fc6-0d70-445a-925a-dc48c6e390cc.png)
 
 
 - VeiculoEspecifico
