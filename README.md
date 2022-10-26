@@ -13,12 +13,12 @@ Ex.:
 Existem duas classes: Carro e Veículo. Supondo que um veículo possa instanciar um objeto do tipo carro, a classe veículo depende de Carro e a classe Carro vira uma dependência de veículo.
 
 
-class Veiculo{
- Carro carro;
- Veiculo(){
- carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
- }
-}
+>class Veiculo{
+ >Carro carro;
+ >Veiculo(){
+ >carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
+ >}
+>}
 
 A injeção de dependência com o mesmo exemplo seria algo do tipo:
 
