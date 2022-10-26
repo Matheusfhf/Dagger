@@ -14,10 +14,10 @@ Existem duas classes: Carro e Veículo. Supondo que um veículo possa instanciar
 
 
 class Veiculo{
-    Carro carro;
-    Veiculo(){
-    carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
-   }
+ Carro carro;
+ Veiculo(){
+ carro = new Carro(); #é como se sempre que criássemos um veículo nós construíssemos um   carro
+ }
 }
 
 A injeção de dependência com o mesmo exemplo seria algo do tipo:
