@@ -71,8 +71,12 @@ kapt "androidx.hilt:hilt-compiler:1.0.0”
 
 implementation 'androidx.hilt:hilt-navigation-compose:1.0.0’
 
+
+
 Pronto, agora o seu projeto já possui o Dagger.
 
 ### Utilizando na prática
 
 Para utilizar o Dagger, além de instalá-lo precisamos também de organizar o projeto para isso. Sendo assim alguns passos devem ser seguidos para que se possa utilizar o Dagger em um projeto:
+
+
