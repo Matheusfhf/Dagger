@@ -21,14 +21,14 @@ class Veiculo{
 }
 ```
 A injeção de dependência com o mesmo exemplo seria algo do tipo:
-
+```
 class Veiculo{
     Carro carro;
     Veiculo(Carro carro){
         this.carro = carro; #A injeção de dependência é uma modificação positiva, pois faz com que o objeto de dependência, nesse caso o carro, possa ser facilmente           alterado. Além disso, diminui a responsabilidade da classe Veiculo sendo assim, criando classes mais enxutas.
     }
 }
-
+```
 ## Por que usar o Dagger?
 
 No exemplo acima, vimos como funcionaria a injeção de dependência para um exemplo simples, quando possuímos apenas Carro e Veículo, mas o que ocorreria, se por exemplo, possuíssemos Motocicleta, Ônibus, Avião, Trem, Barco, Bicicleta…, ou seja, um número muito grande de dependências? Bom, sem a utilização de um framework como o Dagger, nós iríamos possuir um código extenso e complicado que se fosse utilizado em mais de um lugar no projeto ficaria repetido, ou seja, se precisássemos fazer uma alteração precisaríamos de alterar mannualmente em cada parte do programa em que o trecho aparece.  Para evitar o trabalho repetitivo, utilizamos esse framework que simplifica de forma expressiva a tarefa. 
@@ -50,7 +50,7 @@ Para se utilizar o Dagger, devemos instalá-lo no nosso projeto. Para isso, vamo
 
 
 3. Utilize o seguinte código para puxar o dagger: 
-
+```
 buildscript{
     ext{
         compose_version = '1.1.0'
@@ -59,7 +59,7 @@ buildscript{
         classpath "com.google.dagger:hilt-android-gradle-plugin:2.40.5"
     }
 }
-
+```
 - Exemplo de como ficou a classe:
 
 ![image](https://user-images.githubusercontent.com/91568652/197934804-b5a9746e-848e-4d02-a844-8ec13ec55307.png)
@@ -70,13 +70,13 @@ buildscript{
 
     
 5. Insira os seguintes plugins no campo plugins{}
-
+```
 id ‘kotlin-kapt’
 
 id ‘dagger.hilt.android.plugin’
-
+```
 6. Cole o código a seguir no campo dependencies {}.
-
+```
 //Dagger - Hilt
 
 implementation "com.google.dagger:hilt-android:2.40.5”
@@ -88,7 +88,7 @@ implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03”
 kapt "androidx.hilt:hilt-compiler:1.0.0”
 
 implementation 'androidx.hilt:hilt-navigation-compose:1.0.0’
-
+```
 Pronto, agora o seu projeto já possui o Dagger.
 
 ### Utilizando na prática
